@@ -10,7 +10,7 @@ Beyond EDA toolchain unification, the foundation conducts empirical digital desi
 
 - **[Silis IDE](https://github.com/The-Silis-Foundation/silis)** ([Latest Release](https://github.com/The-Silis-Foundation/silis/releases)) — Flagship modular open-source RTL-to-GDSII ASIC design environment integrating Yosys, OpenROAD, OpenSTA, and Magic VLSI with native C++ layout parsing engines bound via pybind11. Standalone Linux AppImage binaries available.
 - **[GEMMrv32](https://github.com/The-Silis-Foundation/GEMMrv32)** — Spatial 8×8 systolic-array coprocessor integrated into the NEORV32 RISC-V Custom Functions Subsystem (CFS) for accelerated matrix compute with ping-pong tiling registers.
-- **[PulseGEMM](https://github.com/JeromeAntonyRobin/PulseGEMM)** — 16×16 INT8 systolic compute accelerator on Microchip PolarFire SoC with 64-bit AXI4-DMA and Linux UIO drivers (256 MACs/cycle).
+- **[PulseGEMM](https://github.com/The-Silis-Foundation/PulseGEMM)** — 16×16 INT8 systolic compute accelerator on Microchip PolarFire SoC with 64-bit AXI4-DMA and Linux UIO drivers (256 MACs/cycle).
 - **[DOOM on GEMMrv32](https://github.com/JeromeAntonyRobin/DOOM-on-GEMMrv32)** — Bare-metal OS-less port of DOOM offloading 3D transformation matrices directly to systolic hardware coprocessors.
 - **[GEMMrvStudio](https://github.com/The-Silis-Foundation/GEMMrvStudio)** — Telemetry, simulation profiling, and verification environment for custom RISC-V coprocessors.
 

@@ -1,22 +1,67 @@
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/The-Silis-Foundation/.github/main/profile/assets/silisfoundationicon.jpeg" height="110" alt="The Silis Foundation" style="border-radius: 20px; margin-bottom: 14px;" />
+
 # The Silis Foundation
+<sub>Open-source silicon design environments & digital hardware research.</sub>
 
-The Silis Foundation is an open-source hardware and digital design research organization behind **Silis**, an Integrated Development Environment (IDE) engineered for the complete RTL-to-GDSII ASIC silicon design flow. 
+<br>
 
-Beyond EDA toolchain unification, the foundation conducts empirical digital design research, microarchitectural benchmarks, and hardware/software co-design—exploring spatial compute fabrics (such as systolic tensor arrays), custom RISC-V coprocessor extensions (GEMMrv32), and bare-metal runtime infrastructures for their own open silicon.
+<p align="center" style="max-width: 720px; font-size: 14.5px; line-height: 1.7;">
+The Silis Foundation is an open-source initiative dedicated to electronic design automation (EDA) infrastructure and digital silicon research. The foundation engineers unified, production-grade ASIC design tooling and verified hardware compute architectures, eliminating legacy toolchain fragmentation and lowering the barrier to physical silicon tapeouts for researchers, developers, and students worldwide.
+</p>
 
----
-
-### Core Research & Silicon Projects
-
-- **[Silis IDE](https://github.com/The-Silis-Foundation/silis)** ([Latest Release](https://github.com/The-Silis-Foundation/silis/releases)) — Flagship modular open-source RTL-to-GDSII ASIC design environment integrating Yosys, OpenROAD, OpenSTA, and Magic VLSI with native C++ layout parsing engines bound via pybind11. Standalone Linux AppImage binaries available.
-- **[GEMMrv32](https://github.com/The-Silis-Foundation/GEMMrv32)** — Spatial 8×8 systolic-array coprocessor integrated into the NEORV32 RISC-V Custom Functions Subsystem (CFS) for accelerated matrix compute with ping-pong tiling registers.
-- **[PulseGEMM](https://github.com/The-Silis-Foundation/PulseGEMM)** — 16×16 INT8 systolic compute accelerator on Microchip PolarFire SoC with 64-bit AXI4-DMA and Linux UIO drivers (256 MACs/cycle).
-- **[DOOM on GEMMrv32](https://github.com/JeromeAntonyRobin/DOOM-on-GEMMrv32)** — Bare-metal OS-less port of DOOM offloading 3D transformation matrices directly to systolic hardware coprocessors.
-- **[GEMMrvStudio](https://github.com/The-Silis-Foundation/GEMMrvStudio)** — Telemetry, simulation profiling, and verification environment for custom RISC-V coprocessors.
+</div>
 
 ---
 
-### Research Focus & Competencies
-- **Physical Design Automation**: Sub-millisecond DEF layout decoding, interactive clock-tree visualization, and automated tapeout pipelines.
-- **Custom Silicon Architectures**: Domain-specific ISA coprocessor extensions, custom execution units, and spatial PE grids.
-- **Hardware/Software Co-Design**: Bare-metal runtimes, userspace DMA interfaces, and zero-overhead memory streaming for edge silicon.
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+
+### ⬡ Silicon Design Environments
+*Native, turnkey EDA software stacks from RTL to physical GDSII.*
+
+<br>
+
+**[Silis](https://github.com/The-Silis-Foundation/silis)** <img src="https://raw.githubusercontent.com/The-Silis-Foundation/.github/main/profile/assets/silisicon.png" height="16" style="vertical-align: middle;" />  
+*Full-Stack RTL-to-GDSII ASIC Design IDE*  
+Standalone AppImage bundling the complete open EDA stack (Yosys, OpenROAD, OpenSTA, Magic, SkyWater 130nm). Powered by custom C++ DEF layout parsing engines running at 60 FPS, live schematic virtualization, and interactive timing visualizers—zero host toolchain setup required.  
+`x86_64 AppImage` · `C++20 / PyQt6` · `Interactive Cockpit`
+
+<br>
+
+**[Silis CS Edition](https://github.com/The-Silis-Foundation/silis-cs-edition)**  
+*Cloud ASIC Workbench for GitHub Codespaces*  
+The Silis IDE adapted natively as an authentic VS Code extension (`.vsix`) with in-repo pre-compiled ASIC binaries. Features browser-native Webview visualizers with live tri-way cross-probing between RTL source, DigitalJS schematics, and ROHD waveforms.  
+`Native VSIX` · `GitHub Codespaces` · `Tri-Way Cross-Probing`
+
+</td>
+<td width="50%" valign="top">
+
+### ⬡ Hardware Research & Silicon IP
+*Empirically validated compute fabrics and domain-specific microarchitectures.*
+
+<br>
+
+**[PulseGEMM](https://github.com/The-Silis-Foundation/PulseGEMM)**  
+*Universal Systolic Matrix Accelerator IP*  
+High-throughput INT8 systolic tensor compute engine engineered for cross-platform deployment. Adapted by the Foundation from low-power PolarFire architectures to target all major open and proprietary FPGA fabrics with 64-bit AXI4-DMA and Linux UIO drivers.  
+`16×16 INT8 Systolic` · `AXI4-DMA` · `Cross-FPGA IP`
+
+<br>
+
+**[GEMMrv32](https://github.com/The-Silis-Foundation/GEMMrv32)**  
+*Spatial RISC-V Systolic Coprocessor*  
+Custom 8×8 systolic matrix multiplier integrated directly into the NEORV32 core pipeline via the Custom Functions Subsystem (CFS). Executes dense matrix compute in processor register space, bypassing traditional software instruction bottlenecks.  
+`8×8 PE Grid` · `NEORV32 CFS` · `Hardware/Software Co-Design`
+
+</td>
+</tr>
+</table>
+
+---
+
+<div align="center">
+<sub>Designed & Maintained by <a href="https://jeromeantonyrobin.github.io/JeromeAntonyRobin/"><strong>Jerome Antony Robin</strong></a> · <strong>The Silis Foundation</strong> · Open Silicon for Everyone</sub>
+</div>
